@@ -27,7 +27,7 @@ public class Person {
 
     public String unfriend(final Person p) {
         friendCount = friendCount - 1;
-        friendList.replace(friendList, "");
+        friendList = friendList.replace(p.Name, "");
         return friendList;
     }
 

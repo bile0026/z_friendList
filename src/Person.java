@@ -1,8 +1,6 @@
 
 public class Person {
     public String Name;
-    public String getFriendNames;
-    public int getNumberOfFriends;
     public String Person;
     public int friendCount;
     public String friendList;
@@ -13,27 +11,26 @@ public class Person {
         friendList = "";
     }
 
-    public String getName(final String Name) {
+    public String getName() {
         return Name;
 
     }
 
     public String befriend(final Person p) {
-        friendCount = friendCount + 1;
-        // friendList.add(p.getName(Person));
-        this.friendList += (p.Name + " ");
+        // friendCount = friendCount + 1;
+        friendCount++;
+        // friendList += (p.Name + " ");
+        friendList += (p.getName() + " ");
         return friendList;
     }
 
     public String unfriend(final Person p) {
-        friendCount = friendCount - 1;
-        friendList = friendList.replace(p.Name, "");
+        // friendCount = friendCount - 1;
+        friendCount--;
+        // friendList = friendList.replace(p.Name, "");
+        friendList = friendList.replace(p.getName(), "");
         return friendList;
     }
-
-    // private String replace(final String person2, final String string) {
-    //     return null;
-    // }
 
     public String getFriendNames() {
         return friendList;

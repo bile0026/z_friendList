@@ -47,7 +47,7 @@ public class PersonTester {
         System.out.println("Now some drama ensues...");
         System.out.println("------------------------");
 
-        // drame ensues, destroying friendships and forging new alliances...
+        // drama ensues, destroying friendships and forging new alliances...
         alice.unfriend(charlie);
         charlie.unfriend(alice);
 

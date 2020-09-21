@@ -1,7 +1,6 @@
 
 public class Person {
     public String Name;
-    public String Person;
     public int friendCount;
     public String friendList;
 
